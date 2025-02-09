@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+console.log(process.env)
 const apiUrl = process.env.REACT_APP_API_URL;
 console.log(apiUrl);
 axios.defaults.baseURL=apiUrl;
@@ -30,4 +30,5 @@ const service={
     await axios.delete(`/items/${id}`);
   }
 };
+
 export default service;
